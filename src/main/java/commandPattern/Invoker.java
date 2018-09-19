@@ -3,7 +3,8 @@ package commandPattern;
 import commandPattern.command.Command;
 
 /**
- * 接收命令门面并调用真正的receiver去执行命令
+ * 接收命令并调用真正的receiver去执行命令
+ * 是command的代理
  */
 public class Invoker {
     /**

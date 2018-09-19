@@ -34,6 +34,8 @@
 不关心具体谁（ConcreteReceiver）来执行。（最佳实践：receiver由command自己封装了，不要由外界传入）
 2. Command子类可扩展，Client（命令创造者）与Invoker耦合性弱。
 假设现在需要执行ConcreteCommand2，则Client直接创建ConcreteCommand2实例，然后设置到Invoker中即可。Invoker基于接口调用，不用动代码。
+3. 具体的Command可以被不同的Invoker重用
+4. 可以将多个具体的Command组装成一个复合Command
 
 ### 坏处
 每一个具体命令都是一个类，注意类的膨胀扩张。
