@@ -1,6 +1,6 @@
-package commandPattern;
+package command;
 
-import commandPattern.command.ConcreteCommand1;
+import command.command.ConcreteCommand1;
 
 /**
  * 命令模式调用端

@@ -1,4 +1,4 @@
-package commandPattern.receiver;
+package command.receiver;
 
 /**
  * 真正的命令执行者

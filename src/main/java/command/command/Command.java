@@ -1,6 +1,6 @@
-package commandPattern.command;
+package command.command;
 
-import commandPattern.receiver.Receiver;
+import command.receiver.Receiver;
 
 /**
  * 命令接口

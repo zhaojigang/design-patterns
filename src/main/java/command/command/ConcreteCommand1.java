@@ -1,7 +1,7 @@
-package commandPattern.command;
+package command.command;
 
-import commandPattern.receiver.ConcreteReceiver1;
-import commandPattern.receiver.Receiver;
+import command.receiver.ConcreteReceiver1;
+import command.receiver.Receiver;
 
 /**
  * 具体的命令

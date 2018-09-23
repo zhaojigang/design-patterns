@@ -1,6 +1,6 @@
-package commandPattern;
+package command;
 
-import commandPattern.command.Command;
+import command.command.Command;
 
 /**
  * 接收命令并调用真正的receiver去执行命令
