@@ -9,14 +9,8 @@ abstract class  InputStream {
 }
 ```
 
-
 ### ConcreteComponent
-FileInputStream
-
 真实对象类
-
-### Decorator
-FilterInputStream
 ```
 public class FileInputStream extends InputStream {
     public int read() throws IOException {
@@ -27,6 +21,7 @@ public class FileInputStream extends InputStream {
 }
 ```
 
+### Decorator
 装饰对象接口或抽象类。必须具有如下两点：
 
 1. 继承或实现于Component
@@ -47,7 +42,6 @@ public class FilterInputStream extends InputStream {
 ```
 
 ### ConcreteDecorator1
-
 具体的装饰对象，添加功能
 ```
 public class BufferedInputStream extends FilterInputStream {
@@ -79,7 +73,6 @@ public class BufferedInputStream extends FilterInputStream {
 具体的装饰对象，添加功能
 
 ### Client
-
 1. 构造ConcreteComponent多态对象
 2. 创建包装类对象或者包装类链对象（ConcreteDecorator1）
 3. 调用包装类实现的方法
@@ -88,7 +81,6 @@ BufferedInputStream bis = new BufferedInputStream(new FileInputStream(new File("
 ```
 
 ### 好处
-
 相较于继承，更加灵活。减少了继承造成的类扩张，例如，如果使用继承来实现上述功能的话，ConcreteDecorator1要对应一个继承类，ConcreteDecorator2要对应一个继承类，
 对于new ConcreteDecorator2(new ConcreteDecorator1) 这样的组合链还得加一个继承类。
 
